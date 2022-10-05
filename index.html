@@ -14,18 +14,28 @@
     />
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/c56cc79bcf.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Proyecto - Codo a Codo 4.0</title>
   </head>
 
   <body>
     <!-- Navegación -->
-    <div class="nav-bg">
+    <div class="nav-bg" id="nav-bar">
       <nav class="nav-ppal contenedor">
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
+        <a href="index.html">Inicio</a>
+        <a href="#about">Sobre mí</a>
         <a href="#tech">Tecnologías</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="contacto.html">Contact</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </div>
 
@@ -45,7 +55,7 @@
       <div class="contenido-about">
         <img class="imagen-about" src="./imagenes/junior dev.png" alt="" />
         <div class="detail-about">
-          <h2>Acerca de mi</h2>
+          <h2>Sobre mí</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
             ratione magnam. Alias doloremque modi reprehenderit earum recusandae
@@ -54,7 +64,7 @@
           </p>
           <div class="contenedor-boton">
             <button class="boton">
-              <a href="#">Contactame</a>
+              <a href="#section-form">Contactame</a>
             </button>
             <button class="boton">
               <a href="#">Últimos trabajos</a>
@@ -114,7 +124,7 @@
       </div>
     </section>
 
-    <!-- Sección 4: Juan P -->
+    <!-- Sección 4: Juan P. -->
     <section class="contenedor-portfolio" id="portfolio">
       <h2 class="portfolio-title">Portfolio</h2>
       <div class="contenedor-botones-portfolio">
@@ -153,22 +163,84 @@
       </div>
     </section>
 
-    <section>
-      <form action="">Formulario</form>
+    <!-- Formulario de Contacto -->
+    <section class="section-form" id="section-form">
+      <div class="content">
+        <h2 class="title-form">Contáctame</h2>
+
+        <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+            <h3>Completa el formulario</h3>
+            <form action="">
+              <p>
+                <label for="nombreCompleto">Nombre Completo</label>
+                <input type="text" name="fullname" id="nombreCompleto" />
+              </p>
+              <p>
+                <label>Correo</label>
+                <input type="email" name="email" />
+              </p>
+              <p>
+                <label>Teléfono</label>
+                <input type="tel" name="phone" />
+              </p>
+              <p>
+                <label>Asunto</label>
+                <input type="text" name="affair" />
+              </p>
+              <p class="block">
+                <label>Mensaje</label>
+                <textarea name="message" rows="3"></textarea>
+              </p>
+              <p class="block">
+                <button>Envíar</button>
+              </p>
+            </form>
+          </div>
+
+
+          <div class="contact-info">
+            <h4>Más Información</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> CABA</li>
+              <li><i class="fas fa-phone"></i> (+54) 911 1111-1111</li>
+              <li>
+                <i class="fas fa-envelope-open-text"></i> correo@correo.com
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              provident ipsam necessitatibus repellendus?
+            </p>
+            <p>Buenos Aires - Argentina</p>
+          </div>
+        </div>
+      </div>
     </section>
-    
 
     <!-- Sección 5:  -->
     <footer class="footer">
       <div class="footer_info">
         <h4>Trabajo Practico - Codo a Codo 4.0</h4>
         <p>Desarrolladores:</p>
-          <div class="dev">
-            <a href="https://github.com/AgustinaVergara">Agustina Vergara</a>
-            <a href="https://github.com/NabihUzcategui">Nabih Uzcategui</a>
-            <a href="https://github.com/apecetche">Juan P. Apecetche</a>
-          </div>
+        <div class="dev">
+          <a href="https://github.com/AgustinaVergara">Agustina Vergara</a>
+          <a href="https://github.com/NabihUzcategui">Nabih Uzcategui</a>
+          <a href="https://github.com/apecetche">Juan P. Apecetche</a>
+        </div>
       </div>
+
+      <div class=".ir-arriba-button" >
+       <div class="ir-arriba">
+        <a class="arriba" href="#nav-bar">Arriba</a>
+      </div>
+    </div>
+
     </footer>
+">
+     <script src="./formulario.js"></script>
+
+
+
   </body>
 </html>
