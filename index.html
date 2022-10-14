@@ -42,7 +42,7 @@
     <!-- Sección 1: Nabih -->
     <section class="sec-ppal" id="ppal">
       <div class="contenido-ppal">
-        <h1>Nombre - Apellidos</h1>
+        <h1>Nabih Uzcategui</h1>
         <p>Desarrollador FullStack</p>
         <button class="boton">
           <a href="#">Descargar CV</a>
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <!-- Sección 2: Nabih -->
+    <!-- Sección 2: About - Nabih -->
     <section class="sec-about" id="about">
       <div class="contenido-about">
         <img class="imagen-about" src="./imagenes/junior dev.png" alt="" />
@@ -171,33 +171,34 @@
         <div class="contact-wrapper animated bounceInUp">
           <div class="contact-form">
             <h3>Completa el formulario</h3>
-            <form action="">
+            <form action="" id="formulario">
               <p>
-                <label for="nombreCompleto">Nombre Completo</label>
-                <input type="text" name="fullname" id="nombreCompleto" />
+                <label for="fullname">Nombre Completo</label>
+                <input type="text" name="fullname" id="name" />
               </p>
               <p>
-                <label>Correo</label>
-                <input type="email" name="email" />
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" />
               </p>
               <p>
-                <label>Teléfono</label>
-                <input type="tel" name="phone" />
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" />
               </p>
               <p>
-                <label>Asunto</label>
-                <input type="text" name="affair" />
+                <label for="affair">Asunto</label>
+                <input type="text" name="affair" id="affair" />
               </p>
               <p class="block">
-                <label>Mensaje</label>
-                <textarea name="message" rows="3"></textarea>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" rows="3"></textarea>
               </p>
               <p class="block">
-                <button>Envíar</button>
+                <button type="submit">Envíar</button>
               </p>
             </form>
-          </div>
 
+            <a href="mailto:nabihuzcateguip@gmail.com" id="send-mail"></a>
+          </div>
 
           <div class="contact-info">
             <h4>Más Información</h4>
@@ -230,17 +231,13 @@
         </div>
       </div>
 
-      <div class=".ir-arriba-button" >
-       <div class="ir-arriba">
-        <a class="arriba" href="#nav-bar">Arriba</a>
+      <div class=".ir-arriba-button">
+        <div class="ir-arriba">
+          <a class="arriba" href="#nav-bar">Arriba</a>
+        </div>
       </div>
-    </div>
-
     </footer>
-">
-     <script src="./formulario.js"></script>
 
-
-
+    <script src="./app.js"></script>
   </body>
 </html>
