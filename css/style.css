@@ -13,6 +13,7 @@ html {
   box-sizing: border-box;
   font-size: 62, 5%;
   /* 1rem = 10px */
+  scroll-behavior: smooth; 
 }
 
 *,
@@ -510,26 +511,57 @@ body {
   text-transform: uppercase;
 }
 
+/**estilos redes sociales**/
+
+.footer_icon{
+  width: 70%;
+  margin: auto;
+}
+
+.footer_icon h4 {
+  color: var(--amarillo);
+  text-transform: uppercase;
+}
+
+.icon_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_network_icon{
+  width: auto;
+  margin: 15px;
+  padding: 2px 4px;
+  background-color: var(--amarillo);
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  color: var(--primario);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social_network_icon:hover{
+  color: var(--amarillo);
+  background-color: var(--gris-oscuro);
+}
 
 /** estilos ir arriba */
 
-.ir-arriba-button {
-  width: 800px;
-  margin: 0 auto;
-  background-color: yellowgreen;
-  position: absolute;
-}
-
-.ir-arriba {
-  max-width: 100px;
-  background-color: var(--amarillo);
+.go_up_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   text-align: center;
-
-}
-
-.arriba {
+  font-size: 20px;
+  background-color: var(--amarillo);
   color: var(--blanco);
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
+  position: fixed;
+  padding: 1%;
+  bottom: 40px;
+  left: 50px;
 }
