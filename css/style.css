@@ -483,9 +483,8 @@ body {
 /** Estilos del Footer */
 .footer {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 30px;
   background-color: var(--primario);
+  margin: 40px 0;
 }
 
 .footer_info {
@@ -561,7 +560,10 @@ body {
   background-color: var(--amarillo);
   color: var(--blanco);
   position: fixed;
-  padding: 1%;
-  bottom: 40px;
-  left: 50px;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }

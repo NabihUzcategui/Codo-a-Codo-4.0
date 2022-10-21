@@ -24,6 +24,10 @@
       src="https://kit.fontawesome.com/c56cc79bcf.js"
       crossorigin="anonymous"
     ></script>
+
+    <!--JQuery-->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
     <title>Proyecto - Codo a Codo 4.0</title>
   </head>
 
@@ -42,7 +46,7 @@
     <!-- Sección 1: Nabih -->
     <section class="sec-ppal" id="ppal">
       <div class="contenido-ppal">
-        <h1>Nabih Uzcategui</h1>
+        <h1>Nombre</h1>
         <p>Desarrollador FullStack</p>
         <button class="boton">
           <a href="#">Descargar CV</a>
@@ -55,12 +59,13 @@
       <div class="contenido-about">
         <img class="imagen-about" src="./imagenes/junior dev.png" alt="" />
         <div class="detail-about">
-          <h2>Sobre mí</h2>
+          <h2>Sobre nosotros</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-            ratione magnam. Alias doloremque modi reprehenderit earum recusandae
-            blanditiis voluptas, amet voluptatibus odit accusantium illo nam
-            ipsam sit error assumenda labore!
+            Nosotros somos Nabih, Juan Pablo y Agustina, como participantes del curso "Codo a codo" conformamos 
+            este equipo para desarrollar el trabajo practico obligatorio. <br> Nuestra propuesta fue realizar un portfolio web genérico que luego cada uno pueda personalizar y adaptar 
+            en base a sus caracteristicas y conocimientos. Para llevarlo a cabo organizadamente utilizamos GitHub como
+            controlador de versiones y mantuvimos una buena comunicacion mediante el grupo de whatsapp y realizando 
+            reuniones periodicas por meet para comentar nuestros avances.
           </p>
           <div class="contenedor-boton">
             <button class="boton">
@@ -77,7 +82,7 @@
     <!-- Sección 3 : Agustina -->
     <section class="sec-tech" id="tech">
       <h2>Tecnologías</h2>
-      <p>Estas tecnologias son las aprendidas en el curso de Codo a Codo</p>
+      <p>Estas son algunas de las tecnologias aprendidas en el curso de Codo a Codo</p>
       <div class="grid-layout">
         <div class="caja">
           <img
@@ -129,16 +134,16 @@
       <h2 class="portfolio-title">Portfolio</h2>
       <div class="contenedor-botones-portfolio">
         <button class="boton">
-          <a href="#">All</a>
+          <a href="#">Todos</a>
         </button>
         <button class="boton">
           <a href="#">Marketing CV</a>
         </button>
         <button class="boton">
-          <a href="#">Design</a>
+          <a href="#">Diseño</a>
         </button>
         <button class="boton">
-          <a href="#">Development</a>
+          <a href="#">Desarrollo</a>
         </button>
       </div>
       <div class="contenedor-items-portfolio">
@@ -174,11 +179,11 @@
             <form action="" id="formulario">
               <p>
                 <label for="fullname">Nombre Completo</label>
-                <input type="text" name="fullname" id="name" />
+                <input type="text" name="fullname" id="name" required />
               </p>
               <p>
                 <label for="email">Correo</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
               </p>
               <p>
                 <label for="phone">Teléfono</label>
@@ -186,11 +191,11 @@
               </p>
               <p>
                 <label for="affair">Asunto</label>
-                <input type="text" name="affair" id="affair" />
+                <input type="text" name="affair" id="affair" required/>
               </p>
               <p class="block">
                 <label for="message">Mensaje</label>
-                <textarea name="message" id="message" rows="3"></textarea>
+                <textarea name="message" id="message" rows="3" required></textarea>
               </p>
               <p class="block">
                 <button type="submit">Envíar</button>
@@ -240,11 +245,12 @@
           <a href="https://github.com/apecetche">Juan P. Apecetche</a>
         </div>
       </div>
-      
+
     </footer>
 
     <a class="go_up_btn" href="#nav-bar"><i class="fa-solid fa-arrow-up"></i></a>
-
+    
     <script src="./app.js"></script>
+    <script src="./go_up.js"></script>
   </body>
 </html>
