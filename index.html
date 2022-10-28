@@ -14,6 +14,13 @@
     />
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
     <!-- Animate CSS -->
     <link
       rel="stylesheet"
@@ -24,7 +31,6 @@
       src="https://kit.fontawesome.com/c56cc79bcf.js"
       crossorigin="anonymous"
     ></script>
-
     <!--JQuery-->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
@@ -39,7 +45,7 @@
         <a href="#about">Sobre mí</a>
         <a href="#tech">Tecnologías</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="#section-form">Contacto</a>
       </nav>
     </div>
 
@@ -49,7 +55,7 @@
         <h1>Nombre</h1>
         <p>Desarrollador FullStack</p>
         <button class="boton">
-          <a href="#">Descargar CV</a>
+          <a href="./CV/Software Engineer.pdf" target="_blank">Descargar CV</a>
         </button>
       </div>
     </section>
@@ -62,17 +68,14 @@
           <h2>Sobre nosotros</h2>
           <p>
             Nosotros somos Nabih, Juan Pablo y Agustina, como participantes del curso "Codo a codo" conformamos 
-            este equipo para desarrollar el trabajo practico obligatorio. <br> Nuestra propuesta fue realizar un portfolio web genérico que luego cada uno pueda personalizar y adaptar 
-            en base a sus caracteristicas y conocimientos. Para llevarlo a cabo organizadamente utilizamos GitHub como
-            controlador de versiones y mantuvimos una buena comunicacion mediante el grupo de whatsapp y realizando 
-            reuniones periodicas por meet para comentar nuestros avances.
+            este equipo para desarrollar el trabajo practico obligatorio. <br> Nuestra propuesta fue realizar un portfolio web genérico que luego cada uno pueda personalizar y adaptar en base a sus caracteristicas y conocimientos. Para llevarlo a cabo organizadamente utilizamos GitHub como controlador de versiones y mantuvimos una buena comunicacion mediante el grupo de whatsapp y realizando reuniones periodicas por meet para comentar nuestros avances.
           </p>
           <div class="contenedor-boton">
             <button class="boton">
-              <a href="#section-form">Contactame</a>
+              <a href="#section-form">Contáctame</a>
             </button>
             <button class="boton">
-              <a href="#">Últimos trabajos</a>
+              <a href="#detail-about">Blog</a>
             </button>
           </div>
         </div>
@@ -137,35 +140,76 @@
           <a href="#">Todos</a>
         </button>
         <button class="boton">
-          <a href="#">Marketing CV</a>
+          <a href="#">Diseño Web</a>
         </button>
         <button class="boton">
-          <a href="#">Diseño</a>
-        </button>
-        <button class="boton">
-          <a href="#">Desarrollo</a>
+          <a href="#">Webapp</a>
         </button>
       </div>
       <div class="contenedor-items-portfolio">
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Servi Mascotas.jpg" alt="gallardo sonriendo" />
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Opportunity-Green.jpg" alt="gallardo sonriendo" />
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Carlos Dona1.1.jpg" alt="gallardo sonriendo" />
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Choy1.1.jpg" alt="gallardo sonriendo" />
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Kill-Fumigaciones1.1.jpg" alt="gallardo sonriendo" />
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Melisa1.1.jpg" alt="gallardo sonriendo" />
         </div>
       </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="sec-blog" id="detail-about">
+      <h2>Blog</h2>
+      <p class="text-blog">
+        En esta sección presentamos noticias y articulos de contenidos relacionados con las tecnologias y actualidad
+      </p>
+      <div class="blog-section" >
+        <div class="card">
+          <figure class="figure-blog">
+            <img src="./imagenes/CodoaCodo-BBVA.jpg">
+          </figure>
+          <div class="contenido-blog">
+            <h3>Últimas Noticias</h3>
+            <p>BBVA en Argentina incorporará a 8 mujeres egresadas del Programa Codo a Codo, perteneciente al Ministerio de Educación
+              del Gobierno de la Ciudad de Buenos Aires...</p>
+            <a href="https://www.bbva.com/es/ar/sostenibilidad/bbva-en-argentina-incorpora-nuevos-profesionales-del-programa-codo-a-codo-4-0/">Leer Más</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure class="figure-blog">
+            <img src="./imagenes/react-angular.jpg">
+          </figure>
+          <div class="contenido-blog">
+            <h3>React vs Angular</h3>
+            <p>Which framework ir popular - Angular or React? To help you find answers to the above questiones, we will have a
+               detailed comparison...
+            </p>
+            <a href="https://radixweb.com/blog/react-vs-angular">Leer Más</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure class="figure-blog">
+            <img src="./imagenes/what-is-a-full-stack-developer.png">
+          </figure>
+          <div class="contenido-blog">
+            <h3>Ser Desarrollador FullStack</h3>
+            <p>¿qué es un desarrollador full-stack, qué hace y cómo alguien puede llegar a serlo? Sigue leyendo y...</p>
+            <a href="https://kinsta.com/es/blog/que-es-un-desarrollador-full-stack/">Leer Más</a>
+          </div>
+      </div>
+
+    </div>
     </section>
 
     <!-- Formulario de Contacto -->
@@ -177,10 +221,13 @@
           <div class="contact-form">
             <h3>Completa el formulario</h3>
             <form action="" id="formulario">
-              <p>
-                <label for="fullname">Nombre Completo</label>
-                <input type="text" name="fullname" id="name" required />
-              </p>
+              <div  id="group_fullname">
+                <p>
+                  <label for="fullname">Nombre Completo</label>
+                  <input type="text" name="fullname" id="name" required />          
+                </p>
+                <p class="error-message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres</p>
+              </div>
               <p>
                 <label for="email">Correo</label>
                 <input type="email" name="email" id="email" required />
@@ -215,20 +262,20 @@
               </li>
             </ul>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              provident ipsam necessitatibus repellendus?
+              Contactanos y responderemos a la brevedad :)
             </p>
             <p>Buenos Aires - Argentina</p>
           </div>
         </div>
       </div>
+      <div id="myMap"></div>
     </section>
 
     <!-- Sección 5:  -->
     <footer class="footer">
       
       <div class="footer_icon">
-        <h4 class="footer_info">Sigueme en mis redes sociales</h4>
+        <h4 class="footer_info">Sígueme en mis redes sociales</h4>
         <div class="icon_container">
           <a class="social_network_icon" href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin"></i></i></a>
           <a class="social_network_icon" href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
@@ -237,7 +284,7 @@
       </div>
 
       <div class="footer_info">
-        <h4>Trabajo Practico - Codo a Codo 4.0</h4>
+        <h4>Trabajo Práctico - Codo a Codo 4.0</h4>
         <p>Desarrolladores:</p>
         <div class="dev">
           <a href="https://github.com/AgustinaVergara">Agustina Vergara</a>
@@ -245,12 +292,12 @@
           <a href="https://github.com/apecetche">Juan P. Apecetche</a>
         </div>
       </div>
-
     </footer>
 
     <a class="go_up_btn" href="#nav-bar"><i class="fa-solid fa-arrow-up"></i></a>
     
     <script src="./app.js"></script>
     <script src="./go_up.js"></script>
+    <script src="./validation.js"></script>
   </body>
 </html>

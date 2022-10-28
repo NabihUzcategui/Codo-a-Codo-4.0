@@ -1,6 +1,5 @@
 :root {
   --fuenteGeneral: "Fira Code", monospace;
-
   --primario: #2d2e2e;
   --claro: #bac8d3;
   --blanco: #fff;
@@ -13,7 +12,7 @@ html {
   box-sizing: border-box;
   font-size: 62, 5%;
   /* 1rem = 10px */
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 *,
@@ -47,7 +46,7 @@ h3 {
 body {
   font-size: 16px;
   font-family: var(--fuenteGeneral);
-  background-color: var(--primario);
+  background-color: var(--gris-oscuro);
 }
 
 /** Estilos Navegación */
@@ -105,7 +104,6 @@ body {
   width: 100%;
   height: 100%;
   text-transform: uppercase;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,11 +158,14 @@ body {
 
 /** Nabih - Estilos About */
 .sec-about {
-  width: 85%;
-  margin: 0 auto;
+  background-color: var(--primario);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contenido-about {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -283,11 +284,14 @@ body {
 
 /** Juan P. - Estilos Porfolio */
 .contenedor-portfolio {
+  margin: 0 auto;
   text-align: center;
-  padding: 20px 0px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: var(--primario);
 }
 
 .portfolio-title {
@@ -301,59 +305,136 @@ body {
 }
 
 .contenedor-items-portfolio {
-  justify-content: space-evenly;
-  align-items: center;
+  max-width: 1200px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  text-align: center;
-  padding: 20px 0px;
-  width: 80%;
 }
 
 .portfolio-item {
-  width: 90%;
   overflow: hidden;
   padding: 1rem 0rem;
-  transition: all 1s ease-in;
+}
+
+
+.portfolio-item img {
+  width: 100%;
+  height: 210px;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px 0 rgba(0 0 0 / 0.5);
 }
 
 .portfolio-item:hover {
-  opacity: 30%;
+  transition: all 400ms ease;
+  transform: scale(1.8);
 }
 
-@media (min-width: 768px) {
-  .portfolio-item {
-    width: 45%;
-  }
+/** Estilos del Blog */
+.blog-section {
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
-  .portfolio-item {
-    width: 30%;
-  }
+.sec-blog {
+  background-color: var(--gris-oscuro);
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
-/** Estilos del Formulario - Bootstrap */
-.container-md {
-  margin-bottom: 100px;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.4);
-  height: fit-content;
-}
-
-.title-contact {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.sec-blog h2 {
+  color: var(--amarillo);
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sec-blog p {
+  color: var(--claro);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .blog-section {
+    width: 80%;
+    display: block;
+  }
+}
+
+.card {
+  width: 100%;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--primario);
+  box-shadow: 0 1px 10px 0 rgba(0 0 0 / 0.5);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+
+.card:hover {
+  box-shadow: 5px 5px 20px 0 rgba(0 0 0 / 0.9);
+  transform: translateY(-1%);
+}
+
+.figure-blog {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card .contenido-blog {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido-blog p {
+  line-height: 1.5;
+  color: var(--claro);
+}
+
+.card .contenido-blog h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: var(--amarillo);
+}
+
+.card .contenido-blog a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: var(--claro);
+  border: 1px solid var(--claro);
+  border-radius: 10px;
+  transition: all 400ms ease;
+}
+
+.card .contenido-blog a:hover {
+  background: var(--amarillo);
   color: var(--gris-oscuro);
 }
 
+.text-blog {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
 
 /** Estilos Formulario del Index.html */
 .section-form {
   padding-bottom: 50px;
-  background-color: var(--gris-oscuro);
+  background-color: var(--primario);
 }
 
 .content {
@@ -451,8 +532,11 @@ body {
   padding: 0.5rem;
 }
 
-/*MQ large screen form*/
+/**Estilos para las validaciones del formulario*/
 
+
+
+/*MQ large screen form*/
 @media (min-width: 768px) {
   .contact-wrapper {
     display: grid;
@@ -479,11 +563,39 @@ body {
   opacity: 0;
 }
 
+/**Estilos del map API */
+#myMap {
+  height: 350px;
+  max-width: 1165px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 0 rgba(0 0 0 / 0.9);
+}
+
+@media (max-width: 768px) {
+  #myMap {
+    height: 200px;
+    width: 95%;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 0 rgba(0 0 0 / 0.9);
+  }
+}
+
+@media (max-width: 440px) {
+  #myMap {
+    height: 200px;
+    width: 92%;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 0 rgba(0 0 0 / 0.9);
+  }
+}
 
 /** Estilos del Footer */
 .footer {
   width: 100%;
-  background-color: var(--primario);
+  background-color: var(--gris-oscuro);
   margin: 40px 0;
 }
 
@@ -511,8 +623,7 @@ body {
 }
 
 /**estilos redes sociales**/
-
-.footer_icon{
+.footer_icon {
   width: 70%;
   margin: auto;
 }
@@ -522,14 +633,14 @@ body {
   text-transform: uppercase;
 }
 
-.icon_container{
+.icon_container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social_network_icon{
+.social_network_icon {
   width: auto;
   margin: 15px;
   padding: 2px 4px;
@@ -537,20 +648,19 @@ body {
   border: none;
   border-radius: 5px;
   font-size: 30px;
-  color: var(--primario);  
+  color: var(--primario);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 
-.social_network_icon:hover{
+.social_network_icon:hover {
   color: var(--amarillo);
   background-color: var(--gris-oscuro);
 }
 
 /** estilos ir arriba */
-
 .go_up_btn {
   width: 50px;
   height: 50px;
