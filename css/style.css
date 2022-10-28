@@ -47,7 +47,7 @@ h3 {
 body {
   font-size: 16px;
   font-family: var(--fuenteGeneral);
-  background-color: var(--primario);
+  background-color: var(--gris-oscuro);
 }
 
 /** Estilos Navegación */
@@ -160,11 +160,15 @@ body {
 
 /** Nabih - Estilos About */
 .sec-about {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
+  background-color: var(--primario);
+  display: flex;
+  justify-content: center;
 }
 
 .contenido-about {
+  width: 85%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -288,6 +292,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: var(--primario);
 }
 
 .portfolio-title {
@@ -334,7 +339,7 @@ body {
 }
 
 
-/** Estolos del Blog */
+/** Estilos del Blog */
 .blog-section{
   width: 100%;
   padding-bottom: 50px;
@@ -342,7 +347,25 @@ body {
   flex-direction: row;
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: aqua; */
+}
+
+.sec-blog {
+  background-color: var(--gris-oscuro);
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.sec-blog h2 {
+  color: var(--amarillo);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sec-blog p {
+  color: var(--claro);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 800px ) {
@@ -352,13 +375,12 @@ body {
   }
 }
 
-
 .card{
   width: 100%;
   margin: 15px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: var(--gris-oscuro);
+  background-color: var(--primario);
   box-shadow: 0 1px 10px 0 rgba(0 0 0 / 0.5);
   cursor: default;
   transition: all 400ms ease;
@@ -420,24 +442,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** Estilos Formulario del Index.html */
 .section-form {
   padding-bottom: 50px;
-  background-color: var(--gris-oscuro);
+  background-color: var(--primario);
 }
 
 .content {
@@ -535,6 +543,10 @@ body {
   padding: 0.5rem;
 }
 
+/*Estilos para las validaciones del formulario
+
+
+
 /*MQ large screen form*/
 @media (min-width: 768px) {
   .contact-wrapper {
@@ -595,7 +607,7 @@ body {
 /** Estilos del Footer */
 .footer {
   width: 100%;
-  background-color: var(--primario);
+  background-color: var(--gris-oscuro);
   margin: 40px 0;
 }
 

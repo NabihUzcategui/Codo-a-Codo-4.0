@@ -171,40 +171,44 @@
       </div>
     </section>
 
-    <!-- Blog - Alternativo -->
-    <section class="detail-about" id="detail-about">
+    <!-- Blog -->
+    <section class="sec-blog" id="detail-about">
       <h2>Blog</h2>
-      <p class="text-blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id ipsa hic, veniam voluptate a libero placeat molestias officiis quisquam, velit cumque numquam corrupti expedita!</p>
-
+      <p class="text-blog">
+        En esta sección presentamos noticias y articulos de contenidos relacionados con las tecnologias y actualidad
+      </p>
       <div class="blog-section" >
         <div class="card">
           <figure class="figure-blog">
-            <img src="./imagenes/grafico2.jpg">
+            <img src="./imagenes/CodoaCodo-BBVA.jpg">
           </figure>
           <div class="contenido-blog">
             <h3>Últimas Noticias</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id ipsa hic, veniam voluptate a libero placeat molestias officiis quisquam, velit cumque numquam corrupti expedita!</p>
-            <a href="#">Leer Más</a>
+            <p>BBVA en Argentina incorporará a 8 mujeres egresadas del Programa Codo a Codo, perteneciente al Ministerio de Educación
+              del Gobierno de la Ciudad de Buenos Aires...</p>
+            <a href="https://www.bbva.com/es/ar/sostenibilidad/bbva-en-argentina-incorpora-nuevos-profesionales-del-programa-codo-a-codo-4-0/">Leer Más</a>
           </div>
         </div>
         <div class="card">
           <figure class="figure-blog">
-            <img src="./imagenes/imagen9.jpg">
+            <img src="./imagenes/react-angular.jpg">
           </figure>
           <div class="contenido-blog">
-            <h3>Todo sobre React</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id ipsa hic, veniam voluptate a libero placeat molestias officiis quisquam, velit cumque numquam corrupti expedita!</p>
-            <a href="#">Leer Más</a>
+            <h3>React vs Angular</h3>
+            <p>Which framework ir popular - Angular or React? To help you find answers to the above questiones, we will have a
+               detailed comparison...
+            </p>
+            <a href="https://radixweb.com/blog/react-vs-angular">Leer Más</a>
           </div>
         </div>
         <div class="card">
           <figure class="figure-blog">
-            <img src="./imagenes/grafico2.jpg">
+            <img src="./imagenes/what-is-a-full-stack-developer.png">
           </figure>
           <div class="contenido-blog">
-            <h3>Desarrollo Web</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id ipsa hic, veniam voluptate a libero placeat molestias officiis quisquam, velit cumque numquam corrupti expedita!</p>
-            <a href="#">Leer Más</a>
+            <h3>Ser Desarrollador FullStack</h3>
+            <p>¿qué es un desarrollador full-stack, qué hace y cómo alguien puede llegar a serlo? Sigue leyendo y...</p>
+            <a href="https://kinsta.com/es/blog/que-es-un-desarrollador-full-stack/">Leer Más</a>
           </div>
       </div>
 
@@ -220,10 +224,13 @@
           <div class="contact-form">
             <h3>Completa el formulario</h3>
             <form action="" id="formulario">
-              <p>
-                <label for="fullname">Nombre Completo</label>
-                <input type="text" name="fullname" id="name" required />
-              </p>
+              <div  id="group_fullname">
+                <p>
+                  <label for="fullname">Nombre Completo</label>
+                  <input type="text" name="fullname" id="name" required />          
+                </p>
+                <p class="error-message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres</p>
+              </div>
               <p>
                 <label for="email">Correo</label>
                 <input type="email" name="email" id="email" required />
@@ -258,8 +265,7 @@
               </li>
             </ul>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              provident ipsam necessitatibus repellendus?
+              Contactanos y responderemos a la brevedad :)
             </p>
             <p>Buenos Aires - Argentina</p>
           </div>
@@ -295,5 +301,6 @@
     
     <script src="./app.js"></script>
     <script src="./go_up.js"></script>
+    <script src="./validation.js"></script>
   </body>
 </html>
