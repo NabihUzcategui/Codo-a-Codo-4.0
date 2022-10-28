@@ -92,8 +92,10 @@ body {
   background-image: url(../imagenes/imagen9.jpg);
   background-repeat: no-repeat;
   height: 800px;
+  width: 100%;
   position: relative;
 }
+
 
 .contenido-ppal {
   position: absolute;
@@ -109,6 +111,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
 
 .contenido-ppal h1 {
   color: var(--claro);
