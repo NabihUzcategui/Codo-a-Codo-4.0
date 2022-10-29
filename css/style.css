@@ -1,5 +1,6 @@
 :root {
   --fuenteGeneral: "Fira Code", monospace;
+
   --primario: #2d2e2e;
   --claro: #bac8d3;
   --blanco: #fff;
@@ -86,7 +87,6 @@ body {
   background-color: var(--primario);
   color: var(--blanco);
 }
-
 /** Estilos - Banner ppal*/
 .sec-ppal {
   background-image: url(../imagenes/imagen9.jpg);
@@ -274,6 +274,7 @@ body {
   padding: 10px;
   filter: contrast(110%);
   box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 .imagen-tech:hover {
@@ -331,8 +332,8 @@ body {
   transform: scale(1.8);
 }
 
-/** Estilos del Blog - Agustina / Nabih */
-.blog-section {
+/** Estilos del Blog */
+.blog-section{
   width: 100%;
   padding-bottom: 50px;
   display: flex;
@@ -360,14 +361,14 @@ body {
   margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
-  .blog-section {
+@media (max-width: 800px ) {
+  .blog-section{
     width: 80%;
     display: block;
   }
 }
 
-.card {
+.card{
   width: 100%;
   margin: 15px;
   border-radius: 10px;
@@ -378,39 +379,40 @@ body {
   transition: all 400ms ease;
 }
 
-.card:hover {
+
+.card:hover{
   box-shadow: 5px 5px 20px 0 rgba(0 0 0 / 0.9);
   transform: translateY(-1%);
 }
 
-.figure-blog {
+.figure-blog{
   width: 100%;
   height: auto;
   margin: 0;
 }
 
-.card img {
+
+.card img{
   width: 100%;
   height: 200px;
 }
 
-.card .contenido-blog {
+.card .contenido-blog{
   padding: 15px;
   text-align: center;
 }
-
-.card .contenido-blog p {
+.card .contenido-blog p{
   line-height: 1.5;
   color: var(--claro);
 }
 
-.card .contenido-blog h3 {
+.card .contenido-blog h3{
   margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--amarillo);
 }
 
-.card .contenido-blog a {
+.card .contenido-blog a{
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -421,18 +423,19 @@ body {
   transition: all 400ms ease;
 }
 
-.card .contenido-blog a:hover {
+.card .contenido-blog a:hover{
   background: var(--amarillo);
   color: var(--gris-oscuro);
 }
 
-.text-blog {
+.text-blog{
   width: 80%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-/** Estilos Formulario del Index.html - Nabih */
+
+/** Estilos Formulario del Index.html */
 .section-form {
   padding-bottom: 50px;
   background-color: var(--primario);
@@ -533,9 +536,43 @@ body {
   padding: 0.5rem;
 }
 
-/**Estilos para las validaciones del formulario*/
+/*Más estilos para el formulario (Agustina)*/
+.group_form_input{
+  position: relative;
+}
 
+.error_message {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+  display: none;
+}
 
+.error_message_activo {
+  display: block;
+}
+
+.icon_input{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  font-size: 16px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.group_form{
+  padding: 5%;
+}
+
+/*Estilos para las validaciones del formulario*/
+.group_form-correcto .icon_input{
+	color: #1ed12d;
+	opacity: 1;
+}
+.group_form-incorrecto .icon_input {
+	color:#bb2929;
+  opacity: 1;
+}
 
 /*MQ large screen form*/
 @media (min-width: 768px) {
@@ -564,7 +601,7 @@ body {
   opacity: 0;
 }
 
-/**Estilos del mapa API - Nabih */
+/**Estilos del map API */
 #myMap {
   height: 350px;
   max-width: 1165px;
@@ -593,7 +630,8 @@ body {
   }
 }
 
-/** Estilos del Footer - Agustina / Nabih */
+
+/** Estilos del Footer */
 .footer {
   width: 100%;
   background-color: var(--gris-oscuro);
@@ -623,7 +661,7 @@ body {
   text-transform: uppercase;
 }
 
-/**estilos redes sociales - Agustina **/
+/**estilos redes sociales**/
 .footer_icon {
   width: 70%;
   margin: auto;
@@ -661,8 +699,7 @@ body {
   background-color: var(--gris-oscuro);
 }
 
-/** estilos ir arriba - Agustina
- */
+/** estilos ir arriba */
 .go_up_btn {
   width: 50px;
   height: 50px;

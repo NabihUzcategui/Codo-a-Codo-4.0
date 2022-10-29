@@ -183,7 +183,7 @@
             <h3>Últimas Noticias</h3>
             <p>BBVA en Argentina incorporará a 8 mujeres egresadas del Programa Codo a Codo, perteneciente al Ministerio de Educación
               del Gobierno de la Ciudad de Buenos Aires...</p>
-            <a href="https://www.bbva.com/es/ar/sostenibilidad/bbva-en-argentina-incorpora-nuevos-profesionales-del-programa-codo-a-codo-4-0/">Leer Más</a>
+            <a href="https://www.bbva.com/es/ar/sostenibilidad/bbva-en-argentina-incorpora-nuevos-profesionales-del-programa-codo-a-codo-4-0/" target="_blank">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -195,7 +195,7 @@
             <p>Which framework ir popular - Angular or React? To help you find answers to the above questiones, we will have a
                detailed comparison...
             </p>
-            <a href="https://radixweb.com/blog/react-vs-angular">Leer Más</a>
+            <a href="https://radixweb.com/blog/react-vs-angular" target="_blank">Leer Más</a>
           </div>
         </div>
         <div class="card">
@@ -205,7 +205,7 @@
           <div class="contenido-blog">
             <h3>Ser Desarrollador FullStack</h3>
             <p>¿qué es un desarrollador full-stack, qué hace y cómo alguien puede llegar a serlo? Sigue leyendo y...</p>
-            <a href="https://kinsta.com/es/blog/que-es-un-desarrollador-full-stack/">Leer Más</a>
+            <a href="https://kinsta.com/es/blog/que-es-un-desarrollador-full-stack/" target="_blank">Leer Más</a>
           </div>
       </div>
 
@@ -220,26 +220,52 @@
         <div class="contact-wrapper animated bounceInUp">
           <div class="contact-form">
             <h3>Completa el formulario</h3>
-            <form action="" id="formulario">
-              <div  id="group_fullname">
+            <form action="" class="formulario" id="formulario">
+
+              <div  class="group_form" id="group_fullname">
                 <p>
-                  <label for="fullname">Nombre Completo</label>
-                  <input type="text" name="fullname" id="name" required />          
+                  <label for="fullname" class="form_label">Nombre Completo</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="text" name="fullname" id="name" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
                 </p>
-                <p class="error-message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres</p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres. No se admiten simbolos</p>
               </div>
-              <p>
-                <label for="email">Correo</label>
-                <input type="email" name="email" id="email" required />
-              </p>
-              <p>
-                <label for="phone">Teléfono</label>
-                <input type="tel" name="phone" id="phone" />
-              </p>
-              <p>
-                <label for="affair">Asunto</label>
-                <input type="text" name="affair" id="affair" required/>
-              </p>
+
+              <div  class="group_form" id="group_email">
+                <p>
+                  <label for="email" class="form_label">Correo</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="email" name="email" id="email" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> El correo no cumple con el formato</p>
+              </div>
+
+              <div  class="group_form" id="group_phone">
+                <p>
+                  <label for="phone" class="form_label">Teléfono</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="tel" name="phone" id="phone" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Solo se admiten números</p>
+              </div>
+
+              <div  class="group_form" id="group_affair">
+                <p>
+                  <label for="affair" class="form_label">Asunto</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="text" name="affair" id="affair"required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Ingrese un asunto entre 5 y 20 caracteres</p>
+              </div>
+
               <p class="block">
                 <label for="message">Mensaje</label>
                 <textarea name="message" id="message" rows="3" required></textarea>
@@ -262,7 +288,7 @@
               </li>
             </ul>
             <p>
-              Contactanos y responderemos a la brevedad :)
+              Contáctanos y responderemos a la brevedad :)
             </p>
             <p>Buenos Aires - Argentina</p>
           </div>
@@ -298,6 +324,5 @@
     
     <script src="./app.js"></script>
     <script src="./go_up.js"></script>
-    <script src="./validation.js"></script>
   </body>
 </html>
