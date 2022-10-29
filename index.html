@@ -140,33 +140,30 @@
           <a href="#">Todos</a>
         </button>
         <button class="boton">
-          <a href="#">Marketing CV</a>
+          <a href="#">Diseño Web</a>
         </button>
         <button class="boton">
-          <a href="#">Diseño</a>
-        </button>
-        <button class="boton">
-          <a href="#">Desarrollo</a>
+          <a href="#">Webapp</a>
         </button>
       </div>
       <div class="contenedor-items-portfolio">
         <div class="portfolio-item">
-          <img src="./imagenes/logo-html.png" alt="gallardo sonriendo" />
+          <img src="./imagenes/Servi Mascotas.jpg" alt="Imagen de referencia"/>
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Opportunity-Green.jpg" alt="Imagen de referencia"/>
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Carlos Dona1.1.jpg" alt="Imagen de referencia"/>
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Choy1.1.jpg" alt="Imagen de referencia"/>
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Kill-Fumigaciones1.1.jpg" alt="Imagen de referencia"/>
         </div>
         <div class="portfolio-item">
-          <img src="./imagenes/gallardo.webp" alt="gallardo sonriendo" />
+          <img src="./imagenes/Melisa1.1.jpg" alt="Imagen de referencia"/>
         </div>
       </div>
     </section>
@@ -223,26 +220,52 @@
         <div class="contact-wrapper animated bounceInUp">
           <div class="contact-form">
             <h3>Completa el formulario</h3>
-            <form action="" id="formulario">
-              <div  id="group_fullname">
+            <form action="" class="formulario" id="formulario">
+
+              <div  class="group_form" id="group_fullname">
                 <p>
-                  <label for="fullname">Nombre Completo</label>
-                  <input type="text" name="fullname" id="name" required />          
+                  <label for="fullname" class="form_label">Nombre Completo</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="text" name="fullname" id="name" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
                 </p>
-                <p class="error-message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres</p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres. No se admiten simbolos</p>
               </div>
-              <p>
-                <label for="email">Correo</label>
-                <input type="email" name="email" id="email" required />
-              </p>
-              <p>
-                <label for="phone">Teléfono</label>
-                <input type="tel" name="phone" id="phone" />
-              </p>
-              <p>
-                <label for="affair">Asunto</label>
-                <input type="text" name="affair" id="affair" required/>
-              </p>
+
+              <div  class="group_form" id="group_email">
+                <p>
+                  <label for="email" class="form_label">Correo</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="email" name="email" id="email" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> El correo no cumple con el formato</p>
+              </div>
+
+              <div  class="group_form" id="group_phone">
+                <p>
+                  <label for="phone" class="form_label">Teléfono</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="tel" name="phone" id="phone" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Solo se admiten números</p>
+              </div>
+
+              <div  class="group_form" id="group_affair">
+                <p>
+                  <label for="affair" class="form_label">Asunto</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="text" name="affair" id="affair"required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Ingrese un asunto entre 5 y 20 caracteres</p>
+              </div>
+
               <p class="block">
                 <label for="message">Mensaje</label>
                 <textarea name="message" id="message" rows="3" required></textarea>
@@ -265,7 +288,7 @@
               </li>
             </ul>
             <p>
-              Contactanos y responderemos a la brevedad :)
+              Contáctanos y responderemos a la brevedad :)
             </p>
             <p>Buenos Aires - Argentina</p>
           </div>
@@ -301,6 +324,5 @@
     
     <script src="./app.js"></script>
     <script src="./go_up.js"></script>
-    <script src="./validation.js"></script>
   </body>
 </html>
